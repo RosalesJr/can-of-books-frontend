@@ -1,11 +1,42 @@
-# Start your own "Can of Books" App
+# can-of-books-frontend
 
-This repository has starter code to begin work on creating your own online bookshelf.
+## Logistical
 
-## What can books do?
+- What hours will you be available to communicate?
+    - Adrian - anytime
+    - Luis - anytime
+- What platform will you use to communicate (ie. Slack, phone …)?
+    - Slack
+- How often will you take breaks?
+    - Once every hour if needed
+- What is your plan if you start to fall behind?
+    - Communicate and work extra hours if needed
 
-Books are life-changing. They have the power to enlighten, educate, entertain, heal, and help us grow. Build out this code base to create an web app to track what books have impacted you, and what's recommended to read next.
+## Cooperative
 
-## Use this template
+- Make a list of each parson’s strengths.
+    - Luis
+        - Backend
+        - Git
+    - Adrian
+        - Deployment
+        - Backend
+- How can you best utilize these strengths in the development of your application?
+    - Luis will handle any git issues and Adrian will handle the deployment
+- In what areas do you each want to develop greater strength?
+    - Luis
+        - Front end
+    - Adrian
+        - Front end
+- Knowing that every person in your team needs to understand the code, how do you plan to approach the day-to-day
+  development?
+    - We will be utilizing pair programming
+## Conflict Resolution
 
-Clone this repo to your own account with the green "Use this template" button. Then, add any collaborators. Now you are ready to start adding features! Deploy your site to let the world know which books have had the greatest impact on you, and what's recommended. Enjoy!
+- What will your team do if one person is pulling all the weight while the other person is not contributing?
+    - Talk
+- What will your team do if one person is taking over the project and not letting the other member contribute?
+    - Talk
+- How will you approach each other and the challenge of building an application knowing that it is impossible for two
+  people to be at the exact same place in understanding and skill level?
+    - Fill each other's gaps in knowledge
