@@ -8,6 +8,7 @@ import {
   Routes,
   Route
 } from "react-router-dom";
+import About from "./About";
 
 class App extends React.Component {
   render() {
@@ -16,11 +17,12 @@ class App extends React.Component {
         <Router>
           <Header />
           <Routes>
-            <Route 
+            <Route
               exact path="/"
               element={<BestBooks />}
             >
             </Route>
+            <Route path="about" element={<About/>}/>
             {/* PLACEHOLDER: add a route with a path of '/about' that renders the `About` component */}
           </Routes>
           <Footer />
