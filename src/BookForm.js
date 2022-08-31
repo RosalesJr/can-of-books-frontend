@@ -25,7 +25,7 @@ class BookForm extends React.Component {
         </FormGroup>
         <FormGroup controlId="read">
           <FormLabel> Have you read this book?</FormLabel>
-          <FormControl type="checkbox" />
+          <Form.Check type="checkbox" />
         <Button variant="primary" type="submit">Submit</Button>
         </FormGroup>
       </Form>
