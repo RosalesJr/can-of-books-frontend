@@ -31,7 +31,7 @@ class BestBooks extends React.Component
 			let newBook = response.data
 			this.setState({
 				books: [...this.state.books, newBook]
-			});			
+			});
 		} catch (error) {
 			console.log('error posting', error)
 		}
@@ -81,16 +81,14 @@ class BestBooks extends React.Component
 		} catch (error) {
 			console.log('error deleting', error)
 		}
-	
+
 	}
-		
+
 	updateBooks = async(bookToUpdate) =>{
 		try {
-			console.log(bookToUpdate)
 			let url = `${process.env.REACT_APP_SERVER}/books/${bookToUpdate._id}`;
 			let updatedBook = await axios.put(url, bookToUpdate);
 
-			console.log(updatedBook)
 			let updatedBookArray = this.state.books.map(existingBook => {
 				return existingBook._id === bookToUpdate._id
 				? updatedBook.data
@@ -114,7 +112,7 @@ class BestBooks extends React.Component
 	render()
 	{
 		let books = this.state.books.map((value, index) =>
-		{ 
+		{
 		    return (
 			    <Carousel.Item bg-dark key={index}>
 				    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/A_black_image.jpg/640px-A_black_image.jpg"
@@ -138,7 +136,7 @@ class BestBooks extends React.Component
 				<Button onClick={this.showModal}>Add a book</Button>
 					<BookForm addBooks={this.addBooks} show={this.state.show} onHide={this.hideModal}/>
 					{this.state.selectedBook &&
-						<EditForm book={this.state.selectedBook} updateBooks={()=>this.updateBooks(this.state.selectedBook)} />
+						<EditForm book={this.state.selectedBook} updateBooks={this.updateBooks} />
 					}
 				{this.state.books.length ? (
 					<Carousel className="w-50">
@@ -154,7 +152,7 @@ class BestBooks extends React.Component
 
 export default BestBooks;
 // {
-// 	this.state.showUpdateForm && <EditForm 
+// 	this.state.showUpdateForm && <EditForm
 // 	books={this.books} updatedBooks={()=>this.setBook(value)}
 // 	/>
 // }
